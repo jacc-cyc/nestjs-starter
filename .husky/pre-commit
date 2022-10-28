@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+yarn format && yarn lint && yarn test:cov
